@@ -1,4 +1,5 @@
 require("@nomiclabs/hardhat-waffle");
+require("@nomiclabs/hardhat-etherscan");
 const dotenv = require("dotenv");
 
 dotenv.config();
@@ -26,7 +27,7 @@ module.exports = {
   },
   networks: {
     rinkeby:{
-      url: process.env.REACT_APP_RINKEBY_RPC_URL,
+      url: "https://eth-rinkeby.alchemyapi.io/v2/SvQqFAk5OwF4vXGSYyyFCP46GSkNHQBM",
       accounts: ["d6aa3f5a0aaff8498c660bb71207ba81d5adf39e4fd3bc7d4153da144216862e"]
     },
     ropsten: {

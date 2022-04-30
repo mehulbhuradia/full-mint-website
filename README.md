@@ -19,3 +19,5 @@ Create a .env file with the values:
 REACT_APP_RINKEBY_RPC_URL=get from infura
 REACT_APP_ETHERSCAN_KEY=get from etherscan
 REACT_APP_PRIVATE_KEY=crypto wallet private key
+
+0x5E31D1b678018dF8527e9E5894f89419FAAc9Ae4
