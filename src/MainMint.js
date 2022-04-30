@@ -6,7 +6,7 @@ const NFTAddress="0x5E31D1b678018dF8527e9E5894f89419FAAc9Ae4";
 
 const MainMint= ({accounts, setAccounts})=>{
     const [mintAmount,setMintAmount]=useState(1);
-    const isConnected = Boolean(accounts?.[0]);
+    const isConnected = Boolean(accounts[0]);
 
     async function handleMint(){
         

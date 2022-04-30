@@ -1,7 +1,7 @@
 import React from "react";
 
 const NavBar = ({ accounts, setAccounts })=>{
-    const isConnected = Boolean(accounts?.[0]);
+    const isConnected = Boolean(accounts[0]);
 
     async function connectAccount(){
         if(window.ethereum){
