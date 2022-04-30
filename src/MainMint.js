@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import NFT from './NFT.json';
 import { ethers } from 'ethers';
+import { Box, Button, Flex, Input, Text, Link, Spacer} from '@chakra-ui/react';
 
 const NFTAddress="0x5E31D1b678018dF8527e9E5894f89419FAAc9Ae4";
 
@@ -55,7 +56,16 @@ const MainMint= ({accounts, setAccounts})=>{
                     <input type="number" value={mintAmount}/>
                     <button onClick={handleIncrement}>+</button>
                 </div>
-                <button onClick={handleMint}>Mint it.</button>
+                <Button 
+                backgroundColor="#D6517D"
+                borderRadius="5px"
+                boxShadow="0px 2px 2px 1px #0F0F0F"
+                color="white"
+                cursor="pointer"
+                fontFamily="inherit"
+                padding="15px"
+                margin="0 15px"
+                onClick={handleMint}>Mint</Button>
             </div>
         ):(
             <p> Connect your eth wallet to mint NFTs.</p>
