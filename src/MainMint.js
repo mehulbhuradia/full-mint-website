@@ -25,8 +25,9 @@ const MainMint= ({accounts, setAccounts})=>{
     
                 const response = await contract.payToMint(metadataURI,
                 {
-                    value: ethers.utils.parseEther('0.01'),
+                    value: ethers.utils.parseEther('0.001'),
                 });
+                handleIncrement();
                 console.log('response: ',response);
             }catch(err){
                 console.log("error: ",err);
